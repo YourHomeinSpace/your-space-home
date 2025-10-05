@@ -14,6 +14,14 @@ export default {
     },
     extend: {
       colors: {
+        'space-deep': 'hsl(var(--space-deep))',
+        'space-purple': 'hsl(var(--space-purple))',
+        'space-text': 'hsl(var(--space-text))',
+        'space-muted': 'hsl(var(--space-muted))',
+        'space-accent': 'hsl(var(--space-accent))',
+        'space-panel': 'hsl(var(--space-panel))',
+        'space-border': 'hsl(var(--space-border))',
+        'space-glow': 'hsl(var(--space-glow))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

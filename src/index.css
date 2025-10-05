@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --space-deep: 220 40% 8%;
+    --space-purple: 260 35% 15%;
+    --space-text: 200 20% 90%;
+    --space-muted: 200 10% 65%;
+    --space-accent: 180 60% 55%;
+    --space-panel: 220 30% 12%;
+    --space-border: 200 20% 25%;
+    --space-glow: 180 80% 60%;
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
