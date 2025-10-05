@@ -24,10 +24,10 @@ const NameEntry = () => {
       } else {
         clearInterval(timer);
       }
-    }, 50);
+    }, 20);
 
     return () => clearInterval(timer);
-  }, [playDialogueBox]);
+  }, []);
 
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 

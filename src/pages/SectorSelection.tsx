@@ -26,10 +26,10 @@ const SectorSelection = () => {
         clearInterval(timer);
         setTimeout(() => setShowDialogue(false), 2000);
       }
-    }, 30);
+    }, 15);
 
     return () => clearInterval(timer);
-  }, [playerName, playDialogueBox]);
+  }, [playerName]);
 
   const handleSelectItem = (sector: string, item: string) => {
     playSfxClick();

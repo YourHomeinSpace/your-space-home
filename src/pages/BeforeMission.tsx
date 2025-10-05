@@ -35,7 +35,7 @@ const BeforeMission = () => {
           setShowOptions(true);
         }
       }
-    }, 30);
+    }, 15);
   };
 
   const handleNext = () => {
